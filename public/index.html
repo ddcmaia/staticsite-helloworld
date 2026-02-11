@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Forge Static Site Test</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <span class="badge">Forge Static Site</span>
+      <h1>Static site deploy works.</h1>
+      <p>This site is built from <code>ddcmaia/staticsite-helloworld</code> and served via MinIO + Nginx.</p>
+      <section class="card">
+        <h2>Deployment Details</h2>
+        <ul>
+          <li>Static output: <strong>dist/</strong></li>
+          <li>Build script: <strong>node scripts/build.js</strong></li>
+          <li>Cache headers: <strong>Cache-Control</strong> configured by Forge</li>
+        </ul>
+      </section>
+      <p class="timestamp">Build check: <span id="buildTime">Loading...</span></p>
+    </main>
+    <script src="/app.js"></script>
+  </body>
+</html>
